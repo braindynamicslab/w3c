@@ -36,13 +36,6 @@ population_str = 'hlt';
 C_name = 'connAvg66';
 conn_filename = 'HCP11avg_66.mat';
 
-% % Individual SC
-% project_str = 'ucla_la5c';
-% sub_str = 'sub-50004';
-% population_str = 'scz';
-% C_name = 'DWI_infNorm';
-% conn_filename = [sub_str, '_DWI_infNorm.mat'];
-
 load([DWIinputDir, conn_filename]);
 eval(['C = ', C_name, ';']);
 
